@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Scret Cheat Sheet</title>
+	<title>My Secret Cheat Sheet</title>
 	<link rel='stylesheet' type='text/css' href='styles.css'>
 
 </head>
@@ -22,8 +22,6 @@
 
 			<p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.</p>
 
-			<p> What is the difference between? </p>
-			<code>5/3 and 5//3</code>
 
 
 		</section>	
@@ -56,59 +54,60 @@
 
 			<p> What does a function looks like? </p>
 			<pre><code>
-				def foo(x):
-				    if x == 0:
-				        bar()
-				        baz()
-				    else:
-				        qux(x)
-				        foo(x - 1)
-				
+	def foo(x):
+	    if x == 0:
+	        bar()
+	        baz()
+	    else:
+	        qux(x)
+	        foo(x - 1)
+
 			</code></pre>
 
 			<p> What are different ways to print? </p>
 
 			<pre><code>
-				print(f"I just printed {num} pages to the printer {printer}")
+print(f"Dog loves {object} ")
 
-				print("I just printed {0} pages to the printer {1}".format(num, printer))
-				print("I just printed {num} pages to the printer {printer}".format(num=num, printer=printer))
+print("Dog loves {0} and {1}".format(object, second_obj))
 
-				print("I just printed %s pages to the printer %s" % (num, printer))
-				print("I just printed %(num)s pages to the printer %(printer)s" % {"num": num, "printer": printer})
+print("Dog loves {obj} and {obj2}".format(obj="cat", obj2="me"))
+
+print("Dog loves %s and %s" % (object, second_obj))
+
 
 			</code></pre>
 
 			<p> Quick Sort in Python? </p>
 
 			<pre><code>
-				def qsort(L):
-				    if L == []:
-				        return []
-				    pivot = L[0]
-				    return (qsort([x for x in L[1:] if x < pivot]) +
-				            [pivot] +
-				            qsort([x for x in L[1:] if x >= pivot]))
-			</code></pre>
+	def qsort(L):
+	    if L == []:
+	        return []
+	    pivot = L[0]
+	    return (qsort([x for x in L[1:] if x < pivot]) +
+	            [pivot] +
+	            qsort([x for x in L[1:] if x >= pivot]))
+				</code></pre>
 
 
 			<p> Example of Python Class </p>
 			<pre><code>
-				class MyClass(object):
-				    def get_a(self):
-				        return self._a
-				    def set_a(self, value):
-				        self._a = value - 1
-				    a = property(get_a, set_a, doc="Off by one a")
+	class MyClass(object):
+	    def get_a(self):
+	        return self._a
+	    def set_a(self, value):
+	        self._a = value - 1
+	    a = property(get_a, set_a, doc="Off by one a")
 
-				# Python 2.6 style
-				class MyClass(object):
-				    @property
-				    def a(self):
-				        return self._a
-				    @a.setter # makes the property writable
-				    def a(self, value):
-				        self._a = value - 1
+	# Python 2.6 style
+	class MyClass(object):
+	    @property
+	    def a(self):
+	        return self._a
+	    @a.setter # makes the property writable
+	    def a(self, value):
+	        self._a = value - 1
 
 
 
@@ -165,13 +164,15 @@
 
 
 		</section>	
+
+		<p> Reference <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"> Python Wikipedia </a></p>
 	
 	</main>
 
 
 	<nav id="navbar">
 		<header>
-			My Secret CheatSheet
+			Python Quick Fact
 		</header>
 
 		<a class="nav-link" href="#introduction">Introduction</a>

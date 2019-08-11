@@ -1,5 +1,68 @@
+body {
+	background-color: rgb(201, 201, 201);
+}
+
+
 .main-section header{
 	font-weight: bold;
+	font-size: 20px;
 
+
+
+}
+
+
+#navbar header {
+	font-weight: bold;
+	font-size: 20px;
+	background-color: white;
+	text-align: center;
+
+}
+
+#navbar a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+#navbar a:hover {
+	color: rgb(91, 128, 163);
+}
+
+#navBar {
+	display: flex; 
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	padding-top: 30px;
+	margin-top: 10px;
+
+
+}
+
+
+#navbar {
+	background-color: black;
+}
+
+.nav-link {
+	flex: 1; 
+	padding: 20px;
+	border-style: solid;
+
+}
+
+#main-doc {
+	margin-left: 240px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+	body {
+		background-color: white;
+	}
 
 }
