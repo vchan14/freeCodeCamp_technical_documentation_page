@@ -1,0 +1,189 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Scret Cheat Sheet</title>
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+
+</head>
+<body>
+
+	<main id="main-doc">
+
+		<section class="main-section" id="introduction">
+			<header > 
+				Introduction
+			</header>
+
+			<p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+
+			<p>Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is often described as a "batteries included" language due to its comprehensive standard library.</p>
+
+			<p> What is the difference between? </p>
+			<code>5/3 and 5//3</code>
+
+
+		</section>	
+
+
+
+
+		<section class="main-section" id="history">
+			<header > 
+				History
+			</header>
+
+			<p>Python was conceived in the late 1980sby Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL), capable of exception handling and interfacing with the Amoeba operating system.[8] Its implementation began in December 1989.[35] Van Rossum continued as Python's lead developer until July 12, 2018, when he announced his "permanent vacation" from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[36] In January, 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member "Steering Council" to lead the project.</p>
+
+			<p>Python 3.0 was released on 3 December 2008. It was a major revision of the language that is not completely backward-compatible. Many of its major features were backported to Python 2.6.x[40] and 2.7.x version series. Releases of Python 3 include the 2to3 utility, which automates (at least partially) the translation of Python 2 code to Python 3.</p>
+
+
+		</section>	
+
+
+
+
+
+		<section class="main-section" id="syntax_and_semantics">
+			<header > 
+				Syntax and Semantics
+			</header>
+
+			<p> The syntax of the Python programming language is the set of rules that defines how a Python program will be written and interpreted (by both the runtime system and by human readers).The Python language has many similarities to Perl, C, and Java. However, there are some definite differences between the languages.</p>
+
+			<p> What does a function looks like? </p>
+			<pre><code>
+				def foo(x):
+				    if x == 0:
+				        bar()
+				        baz()
+				    else:
+				        qux(x)
+				        foo(x - 1)
+				
+			</code></pre>
+
+			<p> What are different ways to print? </p>
+
+			<pre><code>
+				print(f"I just printed {num} pages to the printer {printer}")
+
+				print("I just printed {0} pages to the printer {1}".format(num, printer))
+				print("I just printed {num} pages to the printer {printer}".format(num=num, printer=printer))
+
+				print("I just printed %s pages to the printer %s" % (num, printer))
+				print("I just printed %(num)s pages to the printer %(printer)s" % {"num": num, "printer": printer})
+
+			</code></pre>
+
+			<p> Quick Sort in Python? </p>
+
+			<pre><code>
+				def qsort(L):
+				    if L == []:
+				        return []
+				    pivot = L[0]
+				    return (qsort([x for x in L[1:] if x < pivot]) +
+				            [pivot] +
+				            qsort([x for x in L[1:] if x >= pivot]))
+			</code></pre>
+
+
+			<p> Example of Python Class </p>
+			<pre><code>
+				class MyClass(object):
+				    def get_a(self):
+				        return self._a
+				    def set_a(self, value):
+				        self._a = value - 1
+				    a = property(get_a, set_a, doc="Off by one a")
+
+				# Python 2.6 style
+				class MyClass(object):
+				    @property
+				    def a(self):
+				        return self._a
+				    @a.setter # makes the property writable
+				    def a(self, value):
+				        self._a = value - 1
+
+
+
+			</code></pre>
+
+
+		</section>	
+
+
+
+		<section class="main-section" id="libraries">
+			<header > 
+				Libraries
+			</header>
+
+			<p> </p>
+
+			<p> What is the difference between? </p>
+			<code>5/3 and 5//3</code>
+
+
+			<p> Python's large standard library, commonly cited as one of its greatest strengths,[97] provides tools suited to many tasks. For Internet-facing applications, many standard formats and protocols such as MIME and HTTP are supported. It includes modules for creating graphical user interfaces, connecting to relational databases, generating pseudorandom numbers, arithmetic with arbitrary precision decimals,[98] manipulating regular expressions, and unit testing.
+
+			<p>Some parts of the standard library are covered by specifications (for example, the Web Server Gateway Interface (WSGI) implementation wsgiref follows PEP 333[99]), but most modules are not. They are specified by their code, internal documentation, and test suites (if supplied). However, because most of the standard library is cross-platform Python code, only a few modules need altering or rewriting for variant implementations.</p>
+
+			<p>As of March 2018, the Python Package Index (PyPI), the official repository for third-party Python software, contains over 130,000[100] packages with a wide range of functionality, including:</p>
+
+
+			<ul>
+				<li> Graphical user interfaces</li>
+				<li> Web frameworks</li>
+				<li> Multimedia</li>
+				<li> Database</li>
+				<li> Networking</li>
+				<li> Test frameworks</li>
+				<li> Automation</li>
+				<li> Web Scraping</li>
+
+			</ul>
+
+
+		</section>	
+
+
+		<section class="main-section" id="conclusion">
+			<header > 
+				Conclusion
+			</header>
+
+			<p> May musical arrival beloved luckily adapted him. Shyness mention married son she his started now. Rose if as past near were. To graceful he elegance oh moderate attended entrance pleasure. Vulgar saw fat sudden edward way played either. Thoughts smallest at or peculiar relation breeding produced an. At depart spirit on stairs. She the either are wisdom praise things she before. Be mother itself vanity favour do me of. Begin sex was power joy after had walls miles.</p>
+
+			<p> What is the difference between? </p>
+			<code>5/3 and 5//3</code>
+
+
+		</section>	
+	
+	</main>
+
+
+	<nav id="navbar">
+		<header>
+			My Secret CheatSheet
+		</header>
+
+		<a class="nav-link" href="#introduction">Introduction</a>
+		<a class="nav-link" href="#history">History</a>
+		<a class="nav-link" href="#syntax_and_semantics"> Syntax and Semantics</a>
+		<a class="nav-link" href="#libraries"> Libraries</a>
+		<a class="nav-link" href="#conclusion">Conclusion</a>
+
+
+		
+
+	</nav>
+
+</body>
+</html>
